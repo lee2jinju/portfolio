@@ -1,0 +1,40 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+.text_box{
+    font-size:100px;
+    width: 9000px;
+    top: 50%;
+    position: absolute;
+    animation: text_ani 10s infinite linear;
+}
+@keyframes text_ani {
+    from {left: 0px;}
+    to {left: -3000px;}
+}
+.bt{
+    display: inline-block;
+    background-color: blue;
+    font-size: 20px;
+    font-weight: bold;
+    width: 200px;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    color:white;
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+.bt.bt1:hover{
+    background-color: red;
+    transition-duration: 0.8s;
+}
+.bt.bt2:hover{
+    transform: rotate(45deg);
+}
+.bt.bt3:hover{
+    transform: scale(2);
+}
+.bt.bt4:hover{
+    opacity: 0.5;
+}

@@ -1,0 +1,110 @@
+*{
+    margin: 0px; padding: 0px;
+}
+body{
+    font-family: 'NanumSquare', sans-serif;
+    color:#191919;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    border-bottom: 1px solid #ddd;
+    padding: 0px 80px;
+}
+.header ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+.header ul li{
+    margin-left:24px;
+    font-weight: 700;
+}
+.header .mobile_menu{
+    display: none;
+}
+.card_items{
+    background-color: #eee;
+    padding: 60px 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.card_item{
+    width:410px;
+    height: 370px;
+    background-color: #fff;
+    position:relative;
+    margin:24px;
+}
+.card_items .card_item .card_image img{
+    width:100%;
+}
+.card_items .card_item .card_contents{
+    padding:20px;
+}
+.card_items .card_item .card_contents .card_title{
+    font-weight: 700;
+    font-size:20px;
+}
+.card_items .card_item .card_contents .card_writer{
+    margin-top:10px;
+}
+.card_items .card_item .card_contents .card_job{
+    font-size:16px;
+    font-weight: 700;
+    margin-top:16px;
+}
+.card_items .card_item .card_contents .card_desc{
+    font-size:14px;
+    margin-top:8px;
+    line-height: 20px;
+}
+.card_items .card_item .card_contents .card_time{
+    font-size:12px;
+    color:#666666;
+    position:absolute;
+    bottom:20px;
+}
+@media only screen and (max-width: 600px) {
+    .header ul{
+        display: none;
+    }
+    .header .mobile_menu{
+        display: block;
+    }
+    .header .mobile_menu img{
+        width: 20px;
+    }
+    .header{
+        height: 60px;
+        padding: 0px 24px;
+    }
+    .header .logo img{
+        width:100px;
+    }
+    .card_items{
+        padding: 10px;
+    }
+    .card_items .card_item{
+        margin:10px;
+        width:100%;
+    }
+    .card_items .card_item .card_contents .card_title{
+        font-size:18px;
+    }
+    .card_items .card_item .card_contents .card_writer{
+        font-size:14px;
+    }
+    .card_items .card_item .card_contents{
+        padding:24px;
+    }
+    .card_items .card_item .card_contents .card_job{
+        font-size:16px;
+    }
+    .card_items .card_item .card_contents .card_title{
+        font-size:18px;
+    }
+  }
